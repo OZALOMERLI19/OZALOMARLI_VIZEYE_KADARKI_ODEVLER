@@ -1,0 +1,26 @@
+public class odev22 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.print("Bir sayı giriniz : ");
+        int n = scn.nextInt();
+        int t1 = 0 , t2=0 ,t3=0 ;
+        for (int i = 1; i <=n; i++) {
+            t1=t1+i;
+            if (i%2==0) {
+                t2=t2+i;
+            }
+            else{
+                t3=t3+i;
+            }
+        }
+        System.out.println("1'den n'e kadar sayıların toplamı : "+t1);
+        System.out.println("1'den n'e kadar çift sayıların toplamı : "+t2);
+        System.out.println("1'den n'e kadar tek sayıların toplamı : "+t3);
+        
+    }
+    
+}

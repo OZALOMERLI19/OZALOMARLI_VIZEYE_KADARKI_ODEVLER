@@ -1,0 +1,27 @@
+public class Odev23 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        int eleman1=1 ,eleman2=1 , eleman3=1 , k;
+        int n,r;
+        Scanner klavyeden=new Scanner(System.in);
+        n=klavyeden.nextInt();
+        r=klavyeden.nextInt();
+        for (int i = 1; i <=n ; i++) {
+            eleman1=eleman1*i;
+            if (i <= r) 
+                eleman2=eleman2*i;
+            
+            if (i <= n-r) 
+                eleman3=eleman3*i;
+            
+        }
+        k = eleman1/(eleman2*eleman3);
+        System.out.println(k);
+    }
+    
+}
